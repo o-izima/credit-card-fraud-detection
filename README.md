@@ -96,8 +96,8 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 ## 6. Modeling Approach
 
 ### Models Trained
-1. Logistic Regression
-2. Random Forest
+1. Logistic Regression (LR)
+2. Random Forest (RF)
 3. XGBoost
 
 ### Performance Summary
@@ -149,4 +149,27 @@ Install required Python packages:
 ```text
 pip install -r requirements.txt
 ```
+---
+
+## 10. Technologies
+- Python
+- XGBoost, RF & LR
+- Pandas & NumPy
+- Scikit-learn
+- FastAPI
+- Uvicorn
+- Docker
+---
+
+## 11. Setup & Installation
+Clone the repository:
+```text
+git clone <repo_url>
+cd credit-card-fraud-detection
+```
+Install dependencies
+```text
+pip install -r requirements.txt
+```
+Ensure your models/ folder contains the trained model (generated from the notebook).
 ---
