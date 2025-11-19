@@ -13,6 +13,7 @@ This is a machine learning project that detects fraudulent credit card transacti
 - [Data Preparation](#data-preparation)
 - [Modeling Approach](#modeling-approach)
 - [Model Evaluation](#model-evaluation)
+- [Deployment Workflow](#deployment-workflow)
 - [Requirements](#requirements)
 - [Technologies](#technologies)
 - [Setup & Installation](#setup-and-installation)
