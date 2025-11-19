@@ -8,7 +8,7 @@ A machine learning project that detects fraudulent credit card transactions usin
 
 - [Project Overview](#project-overview)
 - [Project Structure](#project-structure) 
-- [Features](#features)  
+- [Business Objective](#business-objective)  
 - [Requirements](#requirements)  
 - [Technologies](#technologies)  
 - [Setup & Installation](#setup--installation)  
@@ -43,9 +43,14 @@ The project covers the full ML lifecycle—from EDA and preprocessing to model s
 ├── batch_transactions.json         # Example batch transactions input
 └── models                          # Saved trained model(s)
 ```
-## Features
-- Train and save an XGBoost model for credit card fraud detection.
-- Perform exploratory data analysis (EDA) and preprocessing in a Jupyter notebook.
-- Serve predictions via a FastAPI REST API.
-- Support for single and batch transaction predictions.
-- Containerized with Docker for easy deployment.
+## 3. Business Objective
+### Problem Statement
+Financial institutions require an automated fraud detection system that can identify suspicious transactions while reducing false positives.
+
+### Goal
+Predict whether a given credit card transaction is fraudulent or legitimate using machine learning.
+
+### Impact
+- Reduces financial losses.
+- Improves detection efficiency.
+- Helps fraud investigators prioritize high-risk transactions.
