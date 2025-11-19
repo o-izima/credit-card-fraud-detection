@@ -5,17 +5,16 @@ from typing import List
 import pandas as pd
 import xgboost as xgb
 
-MODEL_FEATURE_ORDER = ['scaled_amount', 'scaled_time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28']
+MODEL_FEATURE_ORDER = ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'scaled_amount', 'scaled_time']
 
-app = FastAPI()
+
+app = FastAPI(title="Credit Card Fraud Detection API")
 
 # Load XGBoost model
 bst = xgb.Booster()
-bst.load_model("models/xgb_fraud_model.json")
+bst.load_model("models/XGBoost_best_model.json")
 
 class Transaction(BaseModel):
-    scaled_amount: float
-    scaled_time: float
     V1: float
     V2: float
     V3: float
@@ -44,6 +43,8 @@ class Transaction(BaseModel):
     V26: float
     V27: float
     V28: float
+    scaled_amount: float
+    scaled_time: float
 
 
 class BatchTransactions(BaseModel):
