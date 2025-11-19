@@ -8,7 +8,8 @@ A machine learning project that detects fraudulent credit card transactions usin
 
 - [Project Overview](#project-overview)
 - [Project Structure](#project-structure) 
-- [Business Objective](#business-objective)  
+- [Business Objective](#business-objective)
+- [Dataset](#dataset)  
 - [Requirements](#requirements)  
 - [Technologies](#technologies)  
 - [Setup & Installation](#setup--installation)  
@@ -54,3 +55,23 @@ Predict whether a given credit card transaction is fraudulent or legitimate usin
 - Reduces financial losses.
 - Improves detection efficiency.
 - Helps fraud investigators prioritize high-risk transactions.
+
+## Dataset
+
+### Source
+
+Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+### Description
+- 284,807 transactions over two days.
+- Only 492 fraud cases (~0.172%) → highly imbalanced dataset.
+- Features:
+    - V1–V28: PCA-transformed numeric components
+    - Time: Time difference between transactions
+    - Amount: Transaction amount
+    - Class: Target → 0 = legitimate, 1 = fraud
+
+### Why this dataset works
+- Publicly available and clean.
+- Severe class imbalance supports learning specialized evaluation strategies.
+- Suitable for comparing multiple ML algorithms.
