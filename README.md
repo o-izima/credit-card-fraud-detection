@@ -12,6 +12,7 @@ A machine learning project that detects fraudulent credit card transactions usin
 - [Dataset](#dataset)
 - [Data Preparation](#data-prep)
 - [Modeling Approach](#modeling) 
+- [Model Evaluation](#model-eval)
 - [Requirements](#requirements)  
 - [Technologies](#technologies)  
 - [Setup & Installation](#setup--installation)  
@@ -107,4 +108,45 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 
 ### Deployment Choice
 - **XGBoost** selected and deployed as the final production model.
+---
+
+## 7. Model Evaluation
+Given the highly imbalanced nature of the dataset (fraud cases ≈ 0.17%), traditional accuracy is not meaningful. Instead, the following evaluation metrics were used:
+- **PR-AUC (Precision–Recall AUC)** - Primary Metric
+     → PR-AUC is better for extreme class imbalance (focuses on detecting fraud)
+     → Properly penalizes false positives and false negatives.
+- ROC-AUC
+     → Useful for model comparison but less sensitive to class imbalance, as true negatives dominate.
+- Classification Report
+- Cross Validation
+- Holdout test set evaluation
+---
+
+## 8. Deployment Workflow
+### Model Serialization
+- Saved using joblib or pickle.
+
+### API Development
+- Implemented using FastAPI
+- Endpoints support:
+    - Single transaction prediction
+    - Batch predictions
+
+### Containerization
+- Dockerfile created for reproducible builds.
+- Image runs the FastAPI service for real-time prediction
+
+### Execution
+- Local or cloud deployment possible using Docker commands.
+
+---
+
+## 9. Requirements
+- Python 3.10+
+- Pip 
+
+Install required Python packages: 
+```text
+pip install -r requirements.txt
+```
 ---
