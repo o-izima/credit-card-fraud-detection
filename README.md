@@ -9,7 +9,9 @@ A machine learning project that detects fraudulent credit card transactions usin
 - [Project Overview](#project-overview)
 - [Project Structure](#project-structure) 
 - [Business Objective](#business-objective)
-- [Dataset](#dataset)  
+- [Dataset](#dataset)
+- [Data Preparation](#data-prep) 
+- [Modeling Approach](#modeling) 
 - [Requirements](#requirements)  
 - [Technologies](#technologies)  
 - [Setup & Installation](#setup--installation)  
@@ -67,11 +69,38 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 - Only 492 fraud cases (~0.172%) → highly imbalanced dataset.
 - Features:
     - V1–V28: PCA-transformed numeric components
-    - Time: Time difference between transactions
     - Amount: Transaction amount
+    - Time: Time difference between transactions    
     - Class: Target → 0 = legitimate, 1 = fraud
 
 ### Why this dataset works
 - Publicly available and clean.
 - Severe class imbalance supports learning specialized evaluation strategies.
 - Suitable for comparing multiple ML algorithms.
+
+## Data Preparation
+### Exploratory Data Analysis (EDA)
+- Examine class imbalance
+- Visualize distributions
+- Inspect relationships between Amount, Time, and fraud frequency
+
+### Preprocessing
+- Standardize Amount and Time
+- Manage class imbalance (class_weight, undersampling, or SMOTE)
+- Train/validation/test split
+
+## Modeling Approach
+
+### Models Trained
+1. Logistic Regression
+2. Random Forest
+3. XGBoost
+
+### Performance Summary
+- Default settings:
+    → Random Forest performed the best.
+- After Optuna hyperparameter tuning and evaluation on holdout test data:
+    → XGBoost was the best-performing model, followed by Random Forest.
+
+### Deployment Choice
+- **XGBoost** selected and deployed as the final production model.
