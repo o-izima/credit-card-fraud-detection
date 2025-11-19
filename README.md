@@ -210,4 +210,3 @@ docker run -p 8080:8080 fraud-api
 ```
 
 Test the API inside the container using the same test_api.py script or curl.
----
