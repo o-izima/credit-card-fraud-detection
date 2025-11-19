@@ -32,7 +32,7 @@ This project builds a complete machine learning system capable of:
 The project covers the full ML lifecycle—from EDA and preprocessing to model selection, hyperparameter tuning, and deployment.
 
 ---
-## 2. Project Structure
+## Project Structure
 
 ```text
 .
@@ -49,7 +49,7 @@ The project covers the full ML lifecycle—from EDA and preprocessing to model s
 └── models                          # Saved trained model(s)
 ```
 ---
-## 3. Business Objective
+## Business Objective
 ### Problem Statement
 Financial institutions require an automated fraud detection system that can identify suspicious transactions while reducing false positives.
 
@@ -73,7 +73,7 @@ So if the prediction is less than 0.5, it is considered not fraud.
 
 ---
 
-## 4. Dataset
+## Dataset
 ### Source
 
 Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
