@@ -226,9 +226,5 @@ Test the API inside the container using the same test_api.py script or curl.
 
 ## 15. License
 
-This project is licensed under the MIT License.  
-
-Y## License
-
 This project is licensed under the [MIT License](./LICENSE). See the LICENSE file for details.
 
