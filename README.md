@@ -1,12 +1,13 @@
-# Credit Card Fraud Detection
+# Credit Card Fraud Detection - End-to-End ML Pipeline with FastAPI & Docker Model Deployment
 
-A machine learning project that detects fraudulent credit card transactions using XGBoost. The project provides both a Jupyter notebook for EDA, preprocessing, and model training, as well as a FastAPI-based REST API and Docker deployment for serving predictions.  
+A machine learning project that detects fraudulent credit card transactions using XGBoost, the best performing model. The project provides both a Jupyter notebook for EDA, preprocessing, and model training, as well as a FastAPI-based REST API and Docker deployment for serving predictions.  
 
 ---
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)  
+- [Project Overview](#project-overview)
+- [Project Structure](#project-structure) 
 - [Features](#features)  
 - [Requirements](#requirements)  
 - [Technologies](#technologies)  
@@ -17,7 +18,15 @@ A machine learning project that detects fraudulent credit card transactions usin
 - [License](#license)  
 
 ---
+## Project Overview
+Credit card fraud leads to significant financial losses for banks and customers.
+This project builds a complete machine learning system capable of:
+- Detecting fraudulent transactions using classification models.
+- Producing probability-based fraud risk scores.
+- Deploying the best-performing model as a REST API using FastAPI and Docker.
+The project covers the full ML lifecycle—from EDA and preprocessing to model selection, hyperparameter tuning, and deployment.
 
+---
 ## Project Structure
 
 ```text
