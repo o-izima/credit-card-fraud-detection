@@ -14,12 +14,12 @@ This is a machine learning project that detects fraudulent credit card transacti
 - [Modeling Approach](#modeling-approach)
 - [Model Evaluation](#model-evaluation)
 - [Requirements](#requirements)
-- [Technologies](#technologies)  
-- [Setup & Installation](#setup--installation)
+- [Technologies](#technologies)
+- [Setup & Installation](#setup-and-installation)
 - [Running the API](#running-the-api)
-- [Testing the API](#testing-the-api)  
+- [Testing the API](#testing-the-api)
 - [Docker](#docker)
-- [License](#license) 
+- [License](#license)
 
 ---
 ## 1. Project Overview
