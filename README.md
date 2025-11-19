@@ -16,7 +16,7 @@ This is a machine learning project that detects fraudulent credit card transacti
 - [Deployment Workflow](#deployment-workflow)
 - [Requirements](#requirements)
 - [Technologies](#technologies)
-- [Setup & Installation](#setup-and-installation)
+- [Setup & Installation](#setup--installation)
 - [Running the API](#running-the-api)
 - [Testing the API](#testing-the-api)
 - [Docker](#docker)
