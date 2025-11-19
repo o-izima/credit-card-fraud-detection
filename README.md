@@ -92,7 +92,7 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 - Severe class imbalance supports learning specialized evaluation strategies.
 - Suitable for comparing multiple ML algorithms.
 ---
-## 5. Data Preparation
+## Data Preparation
 ### Exploratory Data Analysis (EDA)
 - Examine class imbalance
 - Visualize distributions
@@ -104,7 +104,7 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 - Train/validation/test split
 
 ---
-## 6. Modeling Approach
+## 6.Modeling Approach
 
 ### Models Trained
 1. Logistic Regression (LR)
