@@ -10,7 +10,7 @@ A machine learning project that detects fraudulent credit card transactions usin
 - [Project Structure](#project-structure) 
 - [Business Objective](#business-objective)
 - [Dataset](#dataset)
-- [Data Preparation](#data-prep) 
+- [Data Preparation](#data-prep)
 - [Modeling Approach](#modeling) 
 - [Requirements](#requirements)  
 - [Technologies](#technologies)  
@@ -21,7 +21,7 @@ A machine learning project that detects fraudulent credit card transactions usin
 - [License](#license)  
 
 ---
-## Project Overview
+## 1. Project Overview
 Credit card fraud leads to significant financial losses for banks and customers.
 This project builds a complete machine learning system capable of:
 - Detecting fraudulent transactions using classification models.
@@ -30,7 +30,7 @@ This project builds a complete machine learning system capable of:
 The project covers the full ML lifecycle—from EDA and preprocessing to model selection, hyperparameter tuning, and deployment.
 
 ---
-## Project Structure
+## 2. Project Structure
 
 ```text
 .
@@ -46,6 +46,7 @@ The project covers the full ML lifecycle—from EDA and preprocessing to model s
 ├── batch_transactions.json         # Example batch transactions input
 └── models                          # Saved trained model(s)
 ```
+---
 ## 3. Business Objective
 ### Problem Statement
 Financial institutions require an automated fraud detection system that can identify suspicious transactions while reducing false positives.
@@ -58,8 +59,9 @@ Predict whether a given credit card transaction is fraudulent or legitimate usin
 - Improves detection efficiency.
 - Helps fraud investigators prioritize high-risk transactions.
 
-## Dataset
+---
 
+## 4. Dataset
 ### Source
 
 Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
@@ -77,8 +79,8 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 - Publicly available and clean.
 - Severe class imbalance supports learning specialized evaluation strategies.
 - Suitable for comparing multiple ML algorithms.
-
-## Data Preparation
+---
+## 5. Data Preparation
 ### Exploratory Data Analysis (EDA)
 - Examine class imbalance
 - Visualize distributions
@@ -89,7 +91,8 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 - Manage class imbalance (class_weight, undersampling, or SMOTE)
 - Train/validation/test split
 
-## Modeling Approach
+---
+## 6. Modeling Approach
 
 ### Models Trained
 1. Logistic Regression
@@ -104,3 +107,4 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 
 ### Deployment Choice
 - **XGBoost** selected and deployed as the final production model.
+---
