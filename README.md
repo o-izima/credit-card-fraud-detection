@@ -174,6 +174,7 @@ pip install -r requirements.txt
 Ensure your models/ folder contains the trained model (generated from the notebook).
 
 
+---
 ## 12. Running the API
 Start the FastAPI application:
 ```text
