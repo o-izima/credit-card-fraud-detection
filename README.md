@@ -228,5 +228,7 @@ Test the API inside the container using the same test_api.py script or curl.
 
 This project is licensed under the MIT License.  
 
-You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright notice and this permission notice are included in all copies or substantial portions of the software.  
+Y## License
+
+This project is licensed under the [MIT License](./LICENSE). See the LICENSE file for details.
 
