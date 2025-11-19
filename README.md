@@ -198,8 +198,8 @@ Example files:
 - `transaction.json` – Single transaction
 - `batch_transactions.json` – Batch transactions
 The script will print the predicted probability of fraud.
-
-### Docker
+---
+### 14. Docker
 Build the Docker image:
 ```text
 docker build -t fraud-api .
