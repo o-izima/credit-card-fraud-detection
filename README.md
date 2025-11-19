@@ -121,7 +121,7 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 ### Deployment Choice
 - **XGBoost** selected and deployed as the final production model.
 ---
-
+[⬆ Go to Top](#top)
 ## Model Evaluation
 Given the highly imbalanced nature of the dataset (fraud cases ≈ 0.17%), traditional accuracy is not meaningful. Instead, the following evaluation metrics were used:
 - **PR-AUC (Precision–Recall AUC)** - Primary Metric
