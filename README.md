@@ -173,3 +173,40 @@ pip install -r requirements.txt
 ```
 Ensure your models/ folder contains the trained model (generated from the notebook).
 ---
+
+## 12. Running the API
+Start the FastAPI application:
+```text
+python main.py
+```
+By default, the API runs at:
+```text
+http://localhost:8080
+```
+Available endpoints:
+- POST /predict – Predict a single transaction
+- POST /predict_batch – Predict multiple transactions
+- GET /health – Health check
+---
+
+## 13. Testing the API
+Use `test_api.py` to test predictions with sample JSON files:
+```text
+python test_api.py
+```
+Example files:
+- `transaction.json` – Single transaction
+- `batch_transactions.json` – Batch transactions
+The script will print the predicted probability of fraud.
+
+### Docker
+Build the Docker image:
+```text
+docker build -t fraud-api .
+```
+Run the Docker container:
+```text
+docker run -p 8080:8080 fraud-api
+```
+Test the API inside the container using the same test_api.py script or curl.
+---
