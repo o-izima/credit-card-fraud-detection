@@ -200,7 +200,7 @@ Example files:
 - `batch_transactions.json` – Batch transactions
 The script will print the predicted probability of fraud.
 ---
-### 14. Docker
+## 14. Docker
 Build the Docker image:
 ```text
 docker build -t fraud-api .
@@ -211,3 +211,13 @@ docker run -p 8080:8080 fraud-api
 ```
 
 Test the API inside the container using the same test_api.py script or curl.
+
+---
+
+## 15. License
+## License
+
+This project is licensed under the MIT License.  
+
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright notice and this permission notice are included in all copies or substantial portions of the software.  
+
