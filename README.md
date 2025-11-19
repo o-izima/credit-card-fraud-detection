@@ -33,6 +33,10 @@ A machine learning project that detects fraudulent credit card transactions usin
 ├── transaction.json                # Example single transaction input
 ├── batch_transactions.json         # Example batch transactions input
 └── models                          # Saved trained model(s)
-
-
+```
 ## Features
+- Train and save an XGBoost model for credit card fraud detection.
+- Perform exploratory data analysis (EDA) and preprocessing in a Jupyter notebook.
+- Serve predictions via a FastAPI REST API.
+- Support for single and batch transaction predictions.
+- Containerized with Docker for easy deployment.
