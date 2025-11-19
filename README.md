@@ -55,6 +55,16 @@ Financial institutions require an automated fraud detection system that can iden
 ### Goal
 Predict whether a given credit card transaction is fraudulent or legitimate using machine learning.
 
+The deployed XGBoost algorithm is setup as a standard binary classification model for fraud detection:
+- The model usually outputs a probability (proba) between 0 and 1 representing the likelihood that a transaction is fraudulent.
+- The **typical threshold is 0.5**:
+    - `proba >= 0.5` → predicted fraudulent
+    - `proba < 0.5` → predicted legitimate / not fraud
+
+So if your prediction is less than 0.5, it is considered not fraud.
+
+⚠️ Note: Sometimes, for imbalanced datasets like credit card fraud, it’s common to lower the threshold (e.g., 0.3) to catch more fraud cases, trading off some false positives for higher recall.
+
 ### Impact
 - Reduces financial losses.
 - Improves detection efficiency.
@@ -215,7 +225,6 @@ Test the API inside the container using the same test_api.py script or curl.
 ---
 
 ## 15. License
-## License
 
 This project is licensed under the MIT License.  
 

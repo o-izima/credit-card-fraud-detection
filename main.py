@@ -7,6 +7,8 @@ import xgboost as xgb
 
 MODEL_FEATURE_ORDER = ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'scaled_amount', 'scaled_time']
 
+# Threshold for classifying fraud
+THRESHOLD = 0.5  # Adjust as needed
 
 app = FastAPI(title="Credit Card Fraud Detection API")
 
@@ -50,23 +52,27 @@ class Transaction(BaseModel):
 class BatchTransactions(BaseModel):
     transactions: List[Transaction]
 
+# Health check endpoint
 @app.get("/health")
 def health():
     return {"status": "ok"}
 
+# Single prediction endpoint
 @app.post("/predict")
 def predict(tx: Transaction):
     df = pd.DataFrame([tx.dict()])
     df = df[MODEL_FEATURE_ORDER]
     dmat = xgb.DMatrix(df)
     proba = float(bst.predict(dmat)[0])
-    return {"xgb_proba": proba}
+    fraud = proba >= THRESHOLD
+    return {"xgb_proba": proba, "fraud": fraud}
 
+# Batch prediction endpoint
 @app.post("/predict_batch")
 def predict_batch(batch: BatchTransactions):
     df = pd.DataFrame([t.dict() for t in batch.transactions])
     df = df[MODEL_FEATURE_ORDER]
     dmat = xgb.DMatrix(df)
     probas = bst.predict(dmat).tolist()
-    preds = [{"xgb_proba": float(p)} for p in probas]
+    preds = [{"xgb_proba": float(p), "fraud": float(p) >= THRESHOLD} for p in probas]
     return {"predictions": preds}
