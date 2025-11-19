@@ -32,7 +32,8 @@ A machine learning project that detects fraudulent credit card transactions usin
 ├── test_api.py                     # Python script for testing API predictions
 ├── transaction.json                # Example single transaction input
 ├── batch_transactions.json         # Example batch transactions input
-└── models                          # Saved trained model(s)
+└── models                          # Saved trained model(s)'''
+
 
 ## Features
 
