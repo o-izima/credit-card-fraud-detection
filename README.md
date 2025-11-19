@@ -104,7 +104,7 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 - Train/validation/test split
 
 ---
-## 6.Modeling Approach
+## Modeling Approach
 
 ### Models Trained
 1. Logistic Regression (LR)
@@ -121,7 +121,7 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 - **XGBoost** selected and deployed as the final production model.
 ---
 
-## 7. Model Evaluation
+## Model Evaluation
 Given the highly imbalanced nature of the dataset (fraud cases ≈ 0.17%), traditional accuracy is not meaningful. Instead, the following evaluation metrics were used:
 - **PR-AUC (Precision–Recall AUC)** - Primary Metric
      → PR-AUC is better for extreme class imbalance (focuses on detecting fraud)
@@ -133,7 +133,7 @@ Given the highly imbalanced nature of the dataset (fraud cases ≈ 0.17%), tradi
 - Holdout test set evaluation
 ---
 
-## 8. Deployment Workflow
+## Deployment Workflow
 ### Model Serialization
 - Saved using joblib or pickle.
 
@@ -152,7 +152,7 @@ Given the highly imbalanced nature of the dataset (fraud cases ≈ 0.17%), tradi
 
 ---
 
-## 9. Requirements
+## Requirements
 - Python 3.10+
 - Pip 
 
@@ -162,7 +162,7 @@ pip install -r requirements.txt
 ```
 ---
 
-## 10. Technologies
+## Technologies
 - Python
 - XGBoost, RF & LR
 - Pandas & NumPy
@@ -172,7 +172,7 @@ pip install -r requirements.txt
 - Docker
 ---
 
-## 11. Setup & Installation
+## Setup & Installation
 Clone the repository:
 ```text
 git clone <repo_url>
@@ -186,7 +186,7 @@ Ensure your models/ folder contains the trained model (generated from the notebo
 
 
 ---
-## 12. Running the API
+## Running the API
 Start the FastAPI application:
 ```text
 python main.py
@@ -201,7 +201,7 @@ Available endpoints:
 - GET /health – Health check
 ---
 
-## 13. Testing the API
+## Testing the API
 Use `test_api.py` to test predictions with sample JSON files:
 ```text
 python test_api.py
@@ -211,7 +211,7 @@ Example files:
 - `batch_transactions.json` – Batch transactions
 The script will print the predicted probability of fraud.
 ---
-## 14. Docker
+## Docker
 Build the Docker image:
 ```text
 docker build -t fraud-api .
@@ -225,7 +225,7 @@ Test the API inside the container using the same test_api.py script or curl.
 
 ---
 
-## 15. License
+## License
 
 This project is licensed under the [MIT License](./LICENSE). See the LICENSE file for details.
 
