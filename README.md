@@ -61,7 +61,7 @@ The deployed XGBoost algorithm is setup as a standard binary classification mode
     - `proba >= 0.5` → predicted fraudulent
     - `proba < 0.5` → predicted legitimate / not fraud
 
-So if your prediction is less than 0.5, it is considered not fraud.
+So if the prediction is less than 0.5, it is considered not fraud.
 
 ⚠️ Note: Sometimes, for imbalanced datasets like credit card fraud, it’s common to lower the threshold (e.g., 0.3) to catch more fraud cases, trading off some false positives for higher recall.
 
