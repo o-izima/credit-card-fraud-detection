@@ -32,25 +32,6 @@ A machine learning project that detects fraudulent credit card transactions usin
 ├── test_api.py                     # Python script for testing API predictions
 ├── transaction.json                # Example single transaction input
 ├── batch_transactions.json         # Example batch transactions input
-└── models                          # Saved trained model(s)'''
+└── models                          # Saved trained model(s)
 
 
-## Features
-
-- Train and save an XGBoost model for credit card fraud detection.  
-- Perform exploratory data analysis (EDA) and preprocessing in a Jupyter notebook.  
-- Serve predictions via a FastAPI REST API.  
-- Support for single and batch transaction predictions.  
-- Containerized with Docker for easy deployment.  
-
----
-
-## Requirements
-
-- Python 3.10+  
-- Pip  
-
-Install required Python packages:
-
-```bash
-pip install -r requirements.txt
