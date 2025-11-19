@@ -120,7 +120,7 @@ Kaggle: [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/ml
 
 ### Deployment Choice
 - **XGBoost** selected and deployed as the final production model.
-[⬆ Go to Top](#top)
+
 ---
 
 ## Model Evaluation
